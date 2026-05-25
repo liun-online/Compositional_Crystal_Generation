@@ -1,0 +1,21 @@
+dataset:
+  max_atoms: 20
+  max_types: 100
+  num_workers: 10
+  primitive: true
+
+diffusion:
+  timesteps: 100
+model:
+  attn_head: 12
+  decoder_layers: 12
+  dropout: 0.0
+  hidden_dim: 768
+training:
+  batch_size: 128
+  epoch: 10000
+  lr: 0.0001
+use_gradscalar: true
+use_schedule: false
+wandb:
+  project: compo
